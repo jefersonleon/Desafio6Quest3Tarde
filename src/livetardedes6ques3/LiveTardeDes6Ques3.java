@@ -16,8 +16,8 @@ public class LiveTardeDes6Ques3 {
     public static void main(String[] args) {
         int cont, num, contDentro, contFora;
         contDentro = 0;
-        contFora = 0;
-        for (cont = 1; cont <= 10; cont++) {
+        contFora = 0; cont=1;
+        while(cont <= 10){
             num = Integer.parseInt(
                     JOptionPane.showInputDialog("Digite um nº"));
             if(num>=10 && num<=20){
@@ -25,6 +25,7 @@ public class LiveTardeDes6Ques3 {
             }else{
                 contFora++;
             }//fim do if
+            cont++;
         }//fim do loop
         JOptionPane.showMessageDialog(null,"No intervalo de  [10,20] "
                 + "existem: "+contDentro+" e fora deste intervalo "
